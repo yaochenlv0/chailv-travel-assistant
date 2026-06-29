@@ -1,0 +1,17 @@
+```
+# 提取出发地和目的地
+    route_pattern = r"从([\u4e00-\u9fa5A-Za-z]+?)(?:去|到|前往)([\u4e00-\u9fa5A-Za-z]+?)(?:出差|开会|办事|旅游|，|。|,|$)"
+    route_match = re.search(route_pattern, user_query)
+```
+
+```
+trip_info["出发地"] = route_match.group(1)
+```
+
+```
+def main() -> None:
+```
+
+```
+trip_info["预算"] = budget_match.group(1) + "元"
+```
