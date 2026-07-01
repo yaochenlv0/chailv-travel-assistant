@@ -15,3 +15,11 @@ def main() -> None:
 ```
 trip_info["预算"] = budget_match.group(1) + "元"
 ```
+
+```
+os.makedirs(os.path.dirname(PREFERENCE_FILE),exist_ok=True)
+```
+
+```
+json.dump(preferences, file, ensure_ascii=False, indent=4)
+```
