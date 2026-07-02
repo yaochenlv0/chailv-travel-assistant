@@ -28,3 +28,12 @@ json.dump(preferences, file, ensure_ascii=False, indent=4)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PREFERENCE_FILE = os.join(BASE_DIR,'data','preferences.json')
 ```
+
+```
+amount_pattern = r"(\d+(?:\.\d+)?)\s*元"
+amount_match = re.search(amount_pattern, user_query)
+```
+
+```
+datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+```

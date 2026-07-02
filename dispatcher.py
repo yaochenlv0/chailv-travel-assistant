@@ -1,5 +1,6 @@
 from planner import plan_trip
 from preference import save_preference
+from expense import handle_expense
 
 def query_info(user_query):
     """
@@ -52,6 +53,9 @@ def dispatch_task(intent, user_query, trip_info):
 
     elif intent == "preference":
         return save_preference(user_query)
+
+    elif intent == "expense":
+        return handle_expense(user_query)
 
     else:
         return chat(user_query)
